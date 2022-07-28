@@ -1,0 +1,24 @@
+function [] = get_spike(mTimer,~)
+
+app =mTimer.UserData.Outtimer.UserData.App;
+disp('get_spike_running')
+
+toc
+if toc < app.RefractorydurSpinner.Value
+
+    [count,timestamps,waveforms,units] = xippmex('spike',app.RecChSpinner.Value);
+    if size(waveforms{1,1},1)~=0
+        mTimer.UserData.waveforms = [mTimer.UserData.waveforms waveforms];
+        mTimer.UserData.units = [mTimer.UserData.units units];
+    end
+
+    sorted_waveforms = cellfun(@(x,y) x(y==app.unit,:),waveforms,units,'UniformOutput',false);
+    valid_ind = logical(cellfun(@(x) length(x), sorted_waveforms));
+    sorted_waveforms = sorted_waveforms(valid_ind);
+
+    cellfun(@(x,y) plot(app.UIAxes_2,(52*(y-1))+1:(52*(y-1))+1+51,x'),sorted_waveforms,num2cell(1:length(sorted_waveforms)))
+else
+    stop(mTimer);
+    app.anti_stim_ready = 1;
+
+end

@@ -1,0 +1,111 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="3764874845" file="C:\Users\USER\Desktop\Ripple_Apps_10_20\RIP (RIPPLE INTERFACE PROCESSOR).prj" location="C:\Users\USER\Desktop\Ripple_Apps_10_20" name="RIP (RIPPLE INTERFACE PROCESSOR)" target="target.mlapps" target-name="앱 패키징">
+    <param.appname>RIP (RIPPLE INTERFACE PROCESSOR)</param.appname>
+    <param.authnamewatermark>Simon Ra</param.authnamewatermark>
+    <param.email>yra2@u.rochester.edu</param.email>
+    <param.company />
+    <param.icon />
+    <param.icons />
+    <param.summary />
+    <param.description>App controlling various features of ripple NIP</param.description>
+    <param.screenshot>${PROJECT_ROOT}\ripple.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>9f1e8fdb-3b42-4648-85e9-680008a03e53</param.guid>
+    <unset>
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.summary />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\app1.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>C:\Program Files (x86)\Ripple\Trellis\Tools\xippmex\xippmex.m</file>
+      <file>C:\Program Files (x86)\Ripple\Trellis\Tools\xippmex\xippmex.mexw64</file>
+      <file>${PROJECT_ROOT}\add_raster.png</file>
+      <file>${PROJECT_ROOT}\anti_stim.m</file>
+      <file>${PROJECT_ROOT}\Anti_timer.m</file>
+      <file>${PROJECT_ROOT}\axis_dialogue_box.mlapp</file>
+      <file>${PROJECT_ROOT}\axis_dialogue_box_anti.mlapp</file>
+      <file>${PROJECT_ROOT}\background_DAQ.m</file>
+      <file>${PROJECT_ROOT}\background_worker_start.m</file>
+      <file>${PROJECT_ROOT}\behavior_icon.PNG</file>
+      <file>${PROJECT_ROOT}\behavior_select.png</file>
+      <file>${PROJECT_ROOT}\cocila2 (1).jpg</file>
+      <file>${PROJECT_ROOT}\create_Anti_timer.m</file>
+      <file>${PROJECT_ROOT}\create_DAQ_timer.m</file>
+      <file>${PROJECT_ROOT}\create_spike_timer.m</file>
+      <file>${PROJECT_ROOT}\create_trialDAQ_timer.m</file>
+      <file>${PROJECT_ROOT}\dialogue_box.mlapp</file>
+      <file>${PROJECT_ROOT}\dialogue_box_y.mlapp</file>
+      <file>${PROJECT_ROOT}\dialogue_box_y_anti.mlapp</file>
+      <file>${PROJECT_ROOT}\file_open_icon.PNG</file>
+      <file>${PROJECT_ROOT}\file_save_icon.PNG</file>
+      <file>${PROJECT_ROOT}\file_save_select.png</file>
+      <file>${PROJECT_ROOT}\filter.png</file>
+      <file>${PROJECT_ROOT}\get_spike.m</file>
+      <file>${PROJECT_ROOT}\input2numvec.m</file>
+      <file>${PROJECT_ROOT}\instant_file_save.png</file>
+      <file>${PROJECT_ROOT}\kernel_icon.PNG</file>
+      <file>${PROJECT_ROOT}\kernel_select.png</file>
+      <file>${PROJECT_ROOT}\Lock.PNG</file>
+      <file>${PROJECT_ROOT}\neural_icon.PNG</file>
+      <file>${PROJECT_ROOT}\neural_select.png</file>
+      <file>${PROJECT_ROOT}\play_icon.PNG</file>
+      <file>${PROJECT_ROOT}\play_select.png</file>
+      <file>${PROJECT_ROOT}\plot_raster.m</file>
+      <file>${PROJECT_ROOT}\Red_horz_line.png</file>
+      <file>${PROJECT_ROOT}\Red_vert_line.PNG</file>
+      <file>${PROJECT_ROOT}\refresh_icon.png</file>
+      <file>${PROJECT_ROOT}\refresh_select.png</file>
+      <file>${PROJECT_ROOT}\reset_trial.m</file>
+      <file>${PROJECT_ROOT}\save_option.mlapp</file>
+      <file>${PROJECT_ROOT}\SNU.png</file>
+      <file>${PROJECT_ROOT}\stim_param_to_string_modified.m</file>
+      <file>${PROJECT_ROOT}\stop_icon.PNG</file>
+      <file>${PROJECT_ROOT}\stop_select.png</file>
+      <file>${PROJECT_ROOT}\trial_DAQ.m</file>
+      <file>${PROJECT_ROOT}\Unlock.png</file>
+      <file>${PROJECT_ROOT}\xippmex_initialization.m</file>
+      <file>${PROJECT_ROOT}\피카츄.png</file>
+      <file>${PROJECT_ROOT}\피카츄_대기.png</file>
+    </fileset.depfun>
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\Users\USER\Desktop" name="Ripple_Apps_10_20" optional="false">C:\Users\USER\Desktop\Ripple_Apps_10_20</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2021b</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
